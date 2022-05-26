@@ -113,36 +113,36 @@ const ButtonPanel = () => {
   const panel = ({ name, value }) => < Button name={name} handleLike={handleLike} value={value}/>
   return (
     <div className='button-panel'>
-      <div>
+      <div className='button-max'>
         {getMax()}
       </div>
-      <div>
-        <div>
+      <div className='button-list'>
+        <div className='button-node'>
           <p>Game of Thrones</p>
           {panel({name: 'Like', value: 'first'})}
           <p>{like1}</p>
         </div>
-        <div>
+        <div className='button-node'>
           <p>Merlin</p>
           {panel({name: 'Like', value: 'second'})}
           <p>{like2}</p>
         </div>
-        <div>
+        <div className='button-node'>
           <p>Avengers</p>
           {panel({name: 'Like', value: 'third'})}
           <p>{like3}</p>
         </div>
-        <div>
+        <div className='button-node'>
           <p>The Return</p>
           {panel({name: 'Like', value: 'fourth'})}
           <p>{like4}</p>
         </div>
-        <div>
+        <div className='button-node'>
           <p>Boss Level</p>
           {panel({name: 'Like', value: 'fifth'})}
           <p>{like5}</p>
         </div>
-        <div>
+        <div className='button-node'>
           <p>Riddick</p>
           {panel({name: 'Like', value: 'sixth'})}
           <p>{like6}</p>
