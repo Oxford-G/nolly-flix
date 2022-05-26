@@ -7,7 +7,6 @@ function App() {
       <header className="App-header">
         <h1>NetFlux</h1>
       </header>
-      <div></div>
       <ButtonPanel />
     </div>
   );
@@ -118,35 +117,37 @@ const ButtonPanel = () => {
         {getMax()}
       </div>
       <div>
-        <p>Game of Thrones</p>
-        {panel({name: 'Like', value: 'first'})}
-        <p>{like1}</p>
-      </div>
-      <div>
-        <p>Merlin</p>
-        {panel({name: 'Like', value: 'second'})}
-        <p>{like2}</p>
-      </div>
-      <div>
-        <p>Avengers</p>
-        {panel({name: 'Like', value: 'third'})}
-        <p>{like3}</p>
-      </div>
-      <div>
-        <p>The Return</p>
-        {panel({name: 'Like', value: 'fourth'})}
-        <p>{like4}</p>
-      </div>
-      <div>
-        <p>Boss Level</p>
-        {panel({name: 'Like', value: 'fifth'})}
-        <p>{like5}</p>
-      </div>
-      <div>
-        <p>Riddick</p>
-        {panel({name: 'Like', value: 'sixth'})}
-        <p>{like6}</p>
-      </div>
+        <div>
+          <p>Game of Thrones</p>
+          {panel({name: 'Like', value: 'first'})}
+          <p>{like1}</p>
+        </div>
+        <div>
+          <p>Merlin</p>
+          {panel({name: 'Like', value: 'second'})}
+          <p>{like2}</p>
+        </div>
+        <div>
+          <p>Avengers</p>
+          {panel({name: 'Like', value: 'third'})}
+          <p>{like3}</p>
+        </div>
+        <div>
+          <p>The Return</p>
+          {panel({name: 'Like', value: 'fourth'})}
+          <p>{like4}</p>
+        </div>
+        <div>
+          <p>Boss Level</p>
+          {panel({name: 'Like', value: 'fifth'})}
+          <p>{like5}</p>
+        </div>
+        <div>
+          <p>Riddick</p>
+          {panel({name: 'Like', value: 'sixth'})}
+          <p>{like6}</p>
+        </div>
+      </div> 
     </div>
   )
 }
