@@ -4,9 +4,6 @@
 Nolly-Flix is a movie app with list of movies with titles and like button. This app is designed to display the movie with the most like at the top of the movie list thereby allowing customers of Nolly-Flix to view popular movies first.
 ## Screen Shot
 
-![](./src/bookstore.png)
-
-
 ## Built With
 
 - Javascript
