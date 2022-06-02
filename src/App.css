@@ -16,9 +16,6 @@
 .button-max {
   min-height: 40vh;
   width: 90%;
-  /* align-items: center; */
-  /* background-color: aquamarine; */
-  /* border-bottom:#282c34 1px solid; */
   margin: 0 auto;
 }
 
@@ -33,7 +30,6 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  /* background-color: #282c34; */
 }
 
 .button-node {
@@ -42,7 +38,6 @@
 }
 
 .button-node > p{
-  /* background-color: red; */
   margin-bottom: -1px;
   text-align: center;
   display: inline-block;
@@ -69,12 +64,7 @@
   border-radius: 6px;
 }
 
-/* .div-top {
-  background-color: aquamarine;
-} */
-
 .p-top {
-  /* background-color: rgb(33, 180, 40); */
   font-size: 26px;
   margin: 80px 0 7px 0;
   color: white;
@@ -86,8 +76,3 @@
   padding: 0 5px;
   line-height: 22px;
 }
-
-/* .App-link {
-  color: #61dafb;
-} */
-
