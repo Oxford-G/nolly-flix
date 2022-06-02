@@ -4,9 +4,6 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>NetFlux</h1>
-      </header>
       <ButtonPanel />
     </div>
   );
@@ -30,60 +27,78 @@ const ButtonPanel = () => {
 
     if (listMax(list) === like1) {
       return (
-      <div>
+      <div className='div-top'>
         <p>Game of Thrones</p>
+        <video className='video-top' controls="controls">  
+          <source src="#" type="video/mp4" /> 
+        </video>
         {panel({name: 'Like', value: 'first'})}
-        <p>{like1}</p>
+        <p className='p-top2'>{like1}</p>
       </div>
       )
     }
 
     if (listMax(list) === like2) {
       return (
-      <div>
+      <div className='div-top'>
         <p>Merlin</p>
+        <video className='video-top' controls="controls">  
+          <source src="#" type="video/mp4" /> 
+        </video>
         {panel({name: 'Like', value: 'second'})}
-        <p>{like2}</p>
+        <p className='p-top2'>{like2}</p>
       </div>
       )
     }
 
     if (listMax(list) === like3) {
       return (
-      <div>
-        <p>Avengers</p>
+      <div className='div-top'>
+        <p className='p-top'>Avengers</p>
+        <video className='video-top' controls="controls">  
+          <source src="#" type="video/mp4" /> 
+        </video>
         {panel({name: 'Like', value: 'third'})}
-        <p>{like3}</p>
+        <p className='p-top2'>{like3}</p>
       </div>
       )
     }
 
     if (listMax(list) === like4) {
       return (
-      <div>
-        <p>The Return</p>
+      <div className='div-top'>
+        <p className='p-top'>Moana</p>
+        <video className='video-top' controls="controls">  
+          <source src="#" type="video/mp4" /> 
+        </video>
         {panel({name: 'Like', value: 'fourth'})}
-        <p>{like4}</p>
+        <p className='p-top2'>{like4}</p>
       </div>
       )
     }
 
     if (listMax(list) === like5) {
       return (
-      <div>
-        <p>Boss Level</p>
+      <div className='div-top'>
+        <p className='p-top'>Transformers</p>
+        <video className='video-top' controls="controls">  
+          <source src="#" type="video/mp4" /> 
+        </video>
         {panel({name: 'Like', value: 'fifth'})}
-        <p>{like5}</p>
+        <p className='p-top2'>{like5}</p>
       </div>
       )
     }
 
     if (listMax(list) === like6) {
       return (
-      <div>
-        <p>Riddick</p>
+      <div className='div-top'>
+        <p className='p-top'>Riddick</p>
+        <video className='video-top' controls="controls">  
+          <source src="#" type="video/mp4" /> 
+        </video>
         {panel({name: 'Like', value: 'sixth'})}
-        <p>{like6}</p>
+        <p className='p-top2'>{like6}</p>
       </div>
       )
     }
@@ -113,37 +128,56 @@ const ButtonPanel = () => {
   const panel = ({ name, value }) => < Button name={name} handleLike={handleLike} value={value}/>
   return (
     <div className='button-panel'>
+      <h1 className='app-header'>NOLLYFLIX</h1>
       <div className='button-max'>
         {getMax()}
       </div>
       <div className='button-list'>
         <div className='button-node'>
           <p>Game of Thrones</p>
+          <video className='video' controls="controls">  
+            <source src="#" type="video/mp4" /> 
+          </video>
           {panel({name: 'Like', value: 'first'})}
           <p>{like1}</p>
         </div>
         <div className='button-node'>
           <p>Merlin</p>
+          <video className='video' controls="controls">  
+            <source src="#" type="video/mp4" /> 
+          </video>
           {panel({name: 'Like', value: 'second'})}
           <p>{like2}</p>
         </div>
         <div className='button-node'>
           <p>Avengers</p>
+          <video className='video' controls="controls">  
+            <source src="#" type="video/mp4" /> 
+          </video>
           {panel({name: 'Like', value: 'third'})}
           <p>{like3}</p>
         </div>
         <div className='button-node'>
-          <p>The Return</p>
+          <p>Moana</p>
+          <video className='video' controls="controls">  
+            <source src="#" type="video/mp4" /> 
+          </video>
           {panel({name: 'Like', value: 'fourth'})}
           <p>{like4}</p>
         </div>
         <div className='button-node'>
-          <p>Boss Level</p>
+          <p>Transformers</p>
+          <video className='video' controls="controls">  
+            <source src="#" type="video/mp4" /> 
+          </video>
           {panel({name: 'Like', value: 'fifth'})}
           <p>{like5}</p>
         </div>
         <div className='button-node'>
           <p>Riddick</p>
+          <video className='video' controls="controls">  
+            <source src="#" type="video/mp4" /> 
+          </video>
           {panel({name: 'Like', value: 'sixth'})}
           <p>{like6}</p>
         </div>

@@ -1,48 +1,93 @@
 .App {
   text-align: center;
   width: auto;
+  margin-bottom: -21px;
 }
 
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
-.App-header {
+.app-header {
   background-color: #282c34;
   min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  margin: 0;
+  line-height: 90px;
+  text-align: center;
 }
 
 .button-max {
   min-height: 40vh;
-  align-items: center;
-  background-color: aquamarine;
-  border-bottom:#282c34 1px solid;
+  width: 90%;
+  /* align-items: center; */
+  /* background-color: aquamarine; */
+  /* border-bottom:#282c34 1px solid; */
+  margin: 0 auto;
+}
+
+.button-panel {
+  margin: 0 auto;
+  background-color: blueviolet;
 }
 
 .button-list {
+  margin: 20px auto;
+  width: 80%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  /* background-color: #282c34; */
 }
 
 .button-node {
-  width: 10vh;
-  height: 10vh;
+  width: 30%;
+  margin: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.button-node > p{
+  /* background-color: red; */
+  margin-bottom: -1px;
+  text-align: center;
+  display: inline-block;
+  padding: 0 5px;
+  line-height: 25px;
+  color: white;
 }
+
+.video-top {
+  width: 100%;
+  height: 400px;
+  margin-bottom: -9px;
+}
+
+.video {
+  width: 100%;
+  height: 200px;
+}
+
+.button {
+  background-color: rgb(247, 103, 46);
+  margin-top: 0;
+  width: 100px;
+  border-radius: 6px;
+}
+
+/* .div-top {
+  background-color: aquamarine;
+} */
+
+.p-top {
+  /* background-color: rgb(33, 180, 40); */
+  font-size: 26px;
+  margin: 80px 0 7px 0;
+  color: white;
+}
+
+.p-top2 {
+  background-color: rgb(231, 236, 238);
+  display: inline-block;
+  padding: 0 5px;
+  line-height: 22px;
+}
+
+/* .App-link {
+  color: #61dafb;
+} */
 
